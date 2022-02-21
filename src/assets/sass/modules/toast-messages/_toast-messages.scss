@@ -35,7 +35,7 @@
         font-size: inherit;
         line-height: inherit;
         .progress-bar {
-          background-color: rgba($secondary, 0.2);
+          background-color: rgba(#6c757d, 0.2);
           .content-height {
             z-index: -1;
             visibility: hidden;
@@ -66,7 +66,7 @@
   .close {
     opacity: 1;
     svg {
-      color: $secondary;
+      color: #6c757d;
     }
   }
 }

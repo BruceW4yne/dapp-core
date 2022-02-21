@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'optionalPackages/classnames';
 import icons from 'optionalPackages/fortawesome-free-solid-svg-icons';
-import ReactBootstrap from 'optionalPackages/react-bootstrap';
+import ReactTailwind from 'optionalPackages/react-tailwind';
 import { SignModalPropsType } from 'types';
 import PageState from 'UI/PageState';
 import { getGeneratedClasses, wrapperClassName } from 'utils';
@@ -38,7 +38,7 @@ export const SignWithWalletConnectModal = ({
     }
   };
   return (
-    <ReactBootstrap.Modal
+    <ReactTailwind.Modal
       show
       backdrop='static'
       onHide={close}
@@ -65,7 +65,7 @@ export const SignWithWalletConnectModal = ({
           </button>
         }
       />
-    </ReactBootstrap.Modal>
+    </ReactTailwind.Modal>
   );
 };
 

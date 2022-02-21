@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'optionalPackages/classnames';
 import freeSolidIcons from 'optionalPackages/fortawesome-free-solid-svg-icons';
-import ReactBootstrap from 'optionalPackages/react-bootstrap';
+import ReactTailwind from 'optionalPackages/react-tailwind';
 import { SignModalPropsType } from 'types';
 import PageState from 'UI/PageState';
 import { getGeneratedClasses, wrapperClassName } from 'utils';
@@ -36,7 +36,7 @@ const SignWithExtensionModal = ({
   };
 
   return (
-    <ReactBootstrap.Modal
+    <ReactTailwind.Modal
       show
       backdrop='static'
       onHide={handleClose}
@@ -63,7 +63,7 @@ const SignWithExtensionModal = ({
           </button>
         }
       />
-    </ReactBootstrap.Modal>
+    </ReactTailwind.Modal>
   );
 };
 
