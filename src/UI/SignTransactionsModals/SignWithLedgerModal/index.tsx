@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSignTransactionsWithLedger } from 'hooks';
 import classNames from 'optionalPackages/classnames';
-import ReactBootstrap from 'optionalPackages/react-bootstrap';
+import ReactTailwind from 'optionalPackages/react-tailwind';
 import { SignModalPropsType } from 'types';
 import { getGeneratedClasses, wrapperClassName } from 'utils';
 import SignStep from './SignStep';
@@ -29,7 +29,7 @@ const SignWithLedgerModal = ({
     cardBody: 'card-body'
   });
   return (
-    <ReactBootstrap.Modal
+    <ReactTailwind.Modal
       show={currentTransaction != null}
       backdrop='static'
       onHide={handleClose}
@@ -57,7 +57,7 @@ const SignWithLedgerModal = ({
           />
         </div>
       </div>
-    </ReactBootstrap.Modal>
+    </ReactTailwind.Modal>
   );
 };
 
