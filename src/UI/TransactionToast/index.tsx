@@ -4,7 +4,7 @@ import { useGetTransactionDisplayInfo } from 'hooks';
 
 import icons from 'optionalPackages/fortawesome-free-solid-svg-icons';
 import moment from 'optionalPackages/moment';
-import ReactBootstrap from 'optionalPackages/react-bootstrap';
+import ReactTailwind from 'optionalPackages/react-tailwind';
 import ReactFontawesome from 'optionalPackages/react-fontawesome';
 import { useSelector } from 'redux/DappProviderContext';
 import { shardSelector } from 'redux/selectors';
@@ -166,7 +166,7 @@ const TransactionToast = ({
   }
 
   return (
-    <ReactBootstrap.Toast
+    <ReactTailwind.Toast
       ref={ref}
       className={generatedClasses.wrapper}
       key={toastId}
@@ -215,7 +215,7 @@ const TransactionToast = ({
           </div>
         </div>
       </Progress>
-    </ReactBootstrap.Toast>
+    </ReactTailwind.Toast>
   );
 };
 

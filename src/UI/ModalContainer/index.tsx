@@ -1,6 +1,6 @@
 import React from 'react';
 import icons from 'optionalPackages/fortawesome-free-solid-svg-icons';
-import ReactBootstrap from 'optionalPackages/react-bootstrap';
+import ReactTailwind from 'optionalPackages/react-tailwind';
 import ReactFontawesome from 'optionalPackages/react-fontawesome';
 import { wrapperClassName } from 'utils';
 
@@ -18,7 +18,7 @@ const ModalContainer = ({
   onClose?: () => void;
 }) => {
   return (
-    <ReactBootstrap.Modal
+    <ReactTailwind.Modal
       show
       backdrop='static'
       onHide={onClose}
@@ -53,7 +53,7 @@ const ModalContainer = ({
           {children}
         </div>
       </div>
-    </ReactBootstrap.Modal>
+    </ReactTailwind.Modal>
   );
 };
 

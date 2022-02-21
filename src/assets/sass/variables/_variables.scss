@@ -1,7 +1,18 @@
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
 
+$card-border-radius: 0.25rem;
+$card-bg: #fff;
+$link-color: #007bff !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+$spacer: 1rem;
 $spacer-val: $spacer * 1.7;
 // SPACING
 $spacers: (

@@ -1,29 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .dapp-core-ui-component {
   display: contents;
 
-    $headings-font-weight: 300 !important;
-    $primary: #1b46c2;
-    $light: #fafafa;
-    $a: #1392ff;
+  $headings-font-weight: 300 !important;
+  $primary: #1b46c2;
+  $light: #fafafa;
+  $a: #1392ff;
 
+  @import './mixins/mixins.scss';
+  @import './themes/theme.scss';
 
-    @import '~bootstrap/scss/bootstrap';
+  // Variables override
+  @import './variables/variables';
 
-    @import './themes/theme.scss';
-
-    // Variables override
-    @import './variables/variables';
-
-
-    @import '~bootstrap/scss/reboot';
-
-    @import './modules/trim/trim';
-    @import './modules/modal/modal';
-    @import './modules/icon-state/icon-state';
-    @import './modules/toast-messages/toast-messages';
-    @import './modules/tx-details-text/tx-details-text';
-    @import './modules/token-symbol/tokenSymbol';
-    @import './modules/data/data';
-  }
-
+  @import './modules/trim/trim';
+  @import './modules/modal/modal';
+  @import './modules/icon-state/icon-state';
+  @import './modules/toast-messages/toast-messages';
+  @import './modules/tx-details-text/tx-details-text';
+  @import './modules/token-symbol/tokenSymbol';
+  @import './modules/data/data';
+}

@@ -3,7 +3,7 @@ import React from 'react';
 import { useGetNotification } from 'hooks';
 
 import icons from 'optionalPackages/fortawesome-free-solid-svg-icons';
-import ReactBootstrap from 'optionalPackages/react-bootstrap';
+import ReactTailwind from 'optionalPackages/react-tailwind';
 import { NotificationTypesEnum } from 'types';
 
 import { wrapperClassName } from 'utils';
@@ -27,7 +27,7 @@ export function NotificationModal() {
     : null;
 
   return notification ? (
-    <ReactBootstrap.Modal
+    <ReactTailwind.Modal
       show={showModal}
       backdrop={true}
       onHide={notification}
@@ -50,7 +50,7 @@ export function NotificationModal() {
           }
         />
       </div>
-    </ReactBootstrap.Modal>
+    </ReactTailwind.Modal>
   ) : null;
 }
 
